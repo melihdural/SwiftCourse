@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E183DFF2BBC4009003C465F /* ListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E183DFD2BBC4009003C465F /* ListApp.xcdatamodeld */; };
 		3ED0DAA72BBBF4510017430B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0DAA62BBBF4510017430B /* AppDelegate.swift */; };
 		3ED0DAA92BBBF4510017430B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0DAA82BBBF4510017430B /* SceneDelegate.swift */; };
 		3ED0DAAB2BBBF4510017430B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0DAAA2BBBF4510017430B /* ViewController.swift */; };
 		3ED0DAAE2BBBF4510017430B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0DAAD2BBBF4510017430B /* Base */; };
 		3ED0DAB02BBBF4520017430B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0DAAF2BBBF4520017430B /* Assets.xcassets */; };
 		3ED0DAB32BBBF4520017430B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0DAB22BBBF4520017430B /* Base */; };
-		3ED0DABF2BBC2F970017430B /* ListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0DABD2BBC2F970017430B /* ListApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E183DFE2BBC4009003C465F /* ListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListApp.xcdatamodel; sourceTree = "<group>"; };
 		3ED0DAA32BBBF4510017430B /* ListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED0DAA62BBBF4510017430B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ED0DAA82BBBF4510017430B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		3ED0DAAF2BBBF4520017430B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED0DAB22BBBF4520017430B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED0DAB42BBBF4520017430B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ED0DABE2BBC2F970017430B /* ListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 				3ED0DAAF2BBBF4520017430B /* Assets.xcassets */,
 				3ED0DAB12BBBF4520017430B /* LaunchScreen.storyboard */,
 				3ED0DAB42BBBF4520017430B /* Info.plist */,
-				3ED0DABD2BBC2F970017430B /* ListApp.xcdatamodeld */,
+				3E183DFD2BBC4009003C465F /* ListApp.xcdatamodeld */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ED0DAAB2BBBF4510017430B /* ViewController.swift in Sources */,
-				3ED0DABF2BBC2F970017430B /* ListApp.xcdatamodeld in Sources */,
+				3E183DFF2BBC4009003C465F /* ListApp.xcdatamodeld in Sources */,
 				3ED0DAA72BBBF4510017430B /* AppDelegate.swift in Sources */,
 				3ED0DAA92BBBF4510017430B /* SceneDelegate.swift in Sources */,
 			);
@@ -401,14 +401,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3ED0DABD2BBC2F970017430B /* ListApp.xcdatamodeld */ = {
+		3E183DFD2BBC4009003C465F /* ListApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3ED0DABE2BBC2F970017430B /* ListApp.xcdatamodel */,
+				3E183DFE2BBC4009003C465F /* ListApp.xcdatamodel */,
 			);
-			currentVersion = 3ED0DABE2BBC2F970017430B /* ListApp.xcdatamodel */;
+			currentVersion = 3E183DFE2BBC4009003C465F /* ListApp.xcdatamodel */;
 			name = ListApp.xcdatamodeld;
-			path = /Users/melihdural/Documents/MelihPersonal/Repos/ListApp/ListApp/SupportingFiles/ListApp.xcdatamodeld;
+			path = /Users/melihdural/Documents/MelihPersonal/Repos/SwiftCourse/ListApp/SupportingFiles/ListApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

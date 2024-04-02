@@ -128,7 +128,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                            submitButtonTitle: "Kaydet",
                            hasTextField: true,
                            defaultButtonHandler: { [self]_ in
-                var text = self.alertController.textFields?.first?.text;
+                let text = self.alertController.textFields?.first?.text;
                 if text != "" {
                     self.data[indexPath.row].setValue(text, forKey: "title");
                     if managedObjectContext!.hasChanges{
