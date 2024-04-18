@@ -11,7 +11,7 @@ import SwiftUI
 struct UdemyApp: App {
     var body: some Scene {
         WindowGroup {
-            IlhamVerSayfa()
+            TabViewMain()
         }
     }
 }
