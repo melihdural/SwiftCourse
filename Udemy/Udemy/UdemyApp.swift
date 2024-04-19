@@ -11,7 +11,8 @@ import SwiftUI
 struct UdemyApp: App {
     var body: some Scene {
         WindowGroup {
-            TabViewMain()
+//            TabViewMain()
+            GambleHomePage()
         }
     }
 }

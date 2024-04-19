@@ -15,6 +15,9 @@
 		3E8544C12BC4162800267C39 /* IlhamVerSayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C02BC4162800267C39 /* IlhamVerSayfa.swift */; };
 		3E8544C32BC4200700267C39 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C22BC4200700267C39 /* LogInPage.swift */; };
 		3E8544C72BC425A600267C39 /* YemekTarifSayfasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C62BC425A600267C39 /* YemekTarifSayfasi.swift */; };
+		3EC582C52BD2F14C004E2C21 /* GambleHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */; };
+		3EC582C72BD2F160004E2C21 /* GambleGamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */; };
+		3EC582C92BD2F17B004E2C21 /* GambleEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		3E8544C02BC4162800267C39 /* IlhamVerSayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlhamVerSayfa.swift; sourceTree = "<group>"; };
 		3E8544C22BC4200700267C39 /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
 		3E8544C62BC425A600267C39 /* YemekTarifSayfasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTarifSayfasi.swift; sourceTree = "<group>"; };
+		3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleHomePage.swift; sourceTree = "<group>"; };
+		3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleGamePage.swift; sourceTree = "<group>"; };
+		3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleEndPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		3E8544AF2BC415AE00267C39 /* Udemy */ = {
 			isa = PBXGroup;
 			children = (
+				3EC582C32BD2F102004E2C21 /* GambleGame */,
 				3E71F35F2BD0645700D43CBF /* SwiftUITasarım */,
 				3E8544B02BC415AE00267C39 /* UdemyApp.swift */,
 				3E8544B22BC415AE00267C39 /* ContentView.swift */,
@@ -93,6 +100,16 @@
 				3E8544B72BC415AF00267C39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EC582C32BD2F102004E2C21 /* GambleGame */ = {
+			isa = PBXGroup;
+			children = (
+				3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */,
+				3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */,
+				3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */,
+			);
+			path = GambleGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +188,9 @@
 				3E8544C72BC425A600267C39 /* YemekTarifSayfasi.swift in Sources */,
 				3E8544B12BC415AE00267C39 /* UdemyApp.swift in Sources */,
 				3E71F3642BD0679000D43CBF /* TabViewMain.swift in Sources */,
+				3EC582C92BD2F17B004E2C21 /* GambleEndPage.swift in Sources */,
+				3EC582C72BD2F160004E2C21 /* GambleGamePage.swift in Sources */,
+				3EC582C52BD2F14C004E2C21 /* GambleHomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
