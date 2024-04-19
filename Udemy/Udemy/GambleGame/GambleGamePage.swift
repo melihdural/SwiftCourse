@@ -16,6 +16,8 @@ struct GambleGamePage: View {
     @State private var isGameEnd = false
     @State private var isUserWin = false
     
+    @State private var showAlert = false
+    
     var body: some View {
         NavigationStack{
             VStack(spacing: 100) {
@@ -37,11 +39,12 @@ struct GambleGamePage: View {
                             helpText = "Sayı >= 5"
                         }
                     }
-                    
+                
                 
                 TextField("Tahmin giriniz...", text: $userGuess)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                
                 
                 Button("TAHMİN ET"){
                     if (Int(userGuess)) == targetNumber {
@@ -49,17 +52,27 @@ struct GambleGamePage: View {
                         isGameEnd = true
                     }
                     else {
-                        guessCount -= 1
+                        if !userGuess.isEmpty{
+                            guessCount -= 1
+                        }
                         isUserWin = false
+                        showAlert = true
+                    }
+                }
+                .alert(!userGuess.isEmpty ? "Tahmin Yanlış" : "Tahmin Giriniz!", isPresented: $showAlert, actions: {
+                    Button("Tamam", role: .cancel, action: {
+                        userGuess = ""
+                        showAlert = false
                         if guessCount <= 0 {
                             isGameEnd = true
                         }
-                    }
-                }
+                    })
+                })
                 .frame(width: 250, height: 50)
                 .background(.blue)
                 .foregroundColor(.white)
                 .cornerRadius(10)
+                
             }
             .navigationDestination(isPresented: $isGameEnd){
                 GambleEndPage(isUserWin: $isUserWin)
