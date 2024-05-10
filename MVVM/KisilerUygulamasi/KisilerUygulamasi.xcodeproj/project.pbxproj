@@ -7,36 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E71F3642BD0679000D43CBF /* TabViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E71F3632BD0679000D43CBF /* TabViewMain.swift */; };
-		3E8544B12BC415AE00267C39 /* UdemyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544B02BC415AE00267C39 /* UdemyApp.swift */; };
-		3E8544B32BC415AE00267C39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544B22BC415AE00267C39 /* ContentView.swift */; };
-		3E8544B52BC415AF00267C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8544B42BC415AF00267C39 /* Assets.xcassets */; };
-		3E8544B82BC415AF00267C39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8544B72BC415AF00267C39 /* Preview Assets.xcassets */; };
-		3E8544C12BC4162800267C39 /* IlhamVerSayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C02BC4162800267C39 /* IlhamVerSayfa.swift */; };
-		3E8544C32BC4200700267C39 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C22BC4200700267C39 /* LogInPage.swift */; };
-		3E8544C72BC425A600267C39 /* YemekTarifSayfasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8544C62BC425A600267C39 /* YemekTarifSayfasi.swift */; };
-		3EC582C52BD2F14C004E2C21 /* GambleHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */; };
-		3EC582C72BD2F160004E2C21 /* GambleGamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */; };
-		3EC582C92BD2F17B004E2C21 /* GambleEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */; };
+		3E2E74F42BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */; };
+		3E2E74F62BEE0EFF0004DC7B /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E74F52BEE0EFF0004DC7B /* Anasayfa.swift */; };
+		3E2E74F82BEE0F000004DC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E74F72BEE0F000004DC7B /* Assets.xcassets */; };
+		3E2E74FB2BEE0F000004DC7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E74FA2BEE0F000004DC7B /* Preview Assets.xcassets */; };
+		3E2E75022BEE13650004DC7B /* KisiEkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E75012BEE13650004DC7B /* KisiEkle.swift */; };
+		3E2E75042BEE13740004DC7B /* KisiDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E75032BEE13740004DC7B /* KisiDetay.swift */; };
+		3E2E75062BEE13900004DC7B /* KisiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E75052BEE13900004DC7B /* KisiItem.swift */; };
+		3E2E75082BEE13A50004DC7B /* Kisi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E75072BEE13A50004DC7B /* Kisi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E71F3632BD0679000D43CBF /* TabViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewMain.swift; sourceTree = "<group>"; };
-		3E8544AD2BC415AE00267C39 /* Udemy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Udemy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E8544B02BC415AE00267C39 /* UdemyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdemyApp.swift; sourceTree = "<group>"; };
-		3E8544B22BC415AE00267C39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3E8544B42BC415AF00267C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E8544B72BC415AF00267C39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3E8544C02BC4162800267C39 /* IlhamVerSayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlhamVerSayfa.swift; sourceTree = "<group>"; };
-		3E8544C22BC4200700267C39 /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
-		3E8544C62BC425A600267C39 /* YemekTarifSayfasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekTarifSayfasi.swift; sourceTree = "<group>"; };
-		3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleHomePage.swift; sourceTree = "<group>"; };
-		3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleGamePage.swift; sourceTree = "<group>"; };
-		3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GambleEndPage.swift; sourceTree = "<group>"; };
+		3E2E74F02BEE0EFF0004DC7B /* KisilerUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisilerUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerUygulamasiApp.swift; sourceTree = "<group>"; };
+		3E2E74F52BEE0EFF0004DC7B /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
+		3E2E74F72BEE0F000004DC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E2E74FA2BEE0F000004DC7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E2E75012BEE13650004DC7B /* KisiEkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiEkle.swift; sourceTree = "<group>"; };
+		3E2E75032BEE13740004DC7B /* KisiDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetay.swift; sourceTree = "<group>"; };
+		3E2E75052BEE13900004DC7B /* KisiItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiItem.swift; sourceTree = "<group>"; };
+		3E2E75072BEE13A50004DC7B /* Kisi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E8544AA2BC415AE00267C39 /* Frameworks */ = {
+		3E2E74ED2BEE0EFF0004DC7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,125 +40,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E2E74CB2BEE0DCA0004DC7B /* MVVM */ = {
+		3E2E74E72BEE0EFF0004DC7B = {
 			isa = PBXGroup;
 			children = (
-				3E2E74CC2BEE0DD40004DC7B /* Kişiler */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		3E2E74CC2BEE0DD40004DC7B /* Kişiler */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Kişiler";
-			path = "Kişiler";
-			sourceTree = "<group>";
-		};
-		3E71F35F2BD0645700D43CBF /* SwiftUITasarım */ = {
-			isa = PBXGroup;
-			children = (
-				3E8544C02BC4162800267C39 /* IlhamVerSayfa.swift */,
-				3E8544C62BC425A600267C39 /* YemekTarifSayfasi.swift */,
-				3E8544C22BC4200700267C39 /* LogInPage.swift */,
-			);
-			path = "SwiftUITasarım";
-			sourceTree = "<group>";
-		};
-		3E71F3602BD064D300D43CBF /* TabViewPage */ = {
-			isa = PBXGroup;
-			children = (
-				3E71F3632BD0679000D43CBF /* TabViewMain.swift */,
-			);
-			path = TabViewPage;
-			sourceTree = "<group>";
-		};
-		3E8544A42BC415AE00267C39 = {
-			isa = PBXGroup;
-			children = (
-				3E8544AF2BC415AE00267C39 /* Udemy */,
-				3E8544AE2BC415AE00267C39 /* Products */,
+				3E2E74F22BEE0EFF0004DC7B /* KisilerUygulamasi */,
+				3E2E74F12BEE0EFF0004DC7B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3E8544AE2BC415AE00267C39 /* Products */ = {
+		3E2E74F12BEE0EFF0004DC7B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3E8544AD2BC415AE00267C39 /* Udemy.app */,
+				3E2E74F02BEE0EFF0004DC7B /* KisilerUygulamasi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3E8544AF2BC415AE00267C39 /* Udemy */ = {
+		3E2E74F22BEE0EFF0004DC7B /* KisilerUygulamasi */ = {
 			isa = PBXGroup;
 			children = (
-				3E2E74CB2BEE0DCA0004DC7B /* MVVM */,
-				3E71F35F2BD0645700D43CBF /* SwiftUITasarım */,
-				3EC582C32BD2F102004E2C21 /* GambleGame */,
-				3E71F3602BD064D300D43CBF /* TabViewPage */,
-				3E8544B62BC415AF00267C39 /* Preview Content */,
-				3E8544B02BC415AE00267C39 /* UdemyApp.swift */,
-				3E8544B22BC415AE00267C39 /* ContentView.swift */,
-				3E8544B42BC415AF00267C39 /* Assets.xcassets */,
+				3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */,
+				3E2E74F52BEE0EFF0004DC7B /* Anasayfa.swift */,
+				3E2E75012BEE13650004DC7B /* KisiEkle.swift */,
+				3E2E75032BEE13740004DC7B /* KisiDetay.swift */,
+				3E2E75072BEE13A50004DC7B /* Kisi.swift */,
+				3E2E75052BEE13900004DC7B /* KisiItem.swift */,
+				3E2E74F72BEE0F000004DC7B /* Assets.xcassets */,
+				3E2E74F92BEE0F000004DC7B /* Preview Content */,
 			);
-			path = Udemy;
+			path = KisilerUygulamasi;
 			sourceTree = "<group>";
 		};
-		3E8544B62BC415AF00267C39 /* Preview Content */ = {
+		3E2E74F92BEE0F000004DC7B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3E8544B72BC415AF00267C39 /* Preview Assets.xcassets */,
+				3E2E74FA2BEE0F000004DC7B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3EC582C32BD2F102004E2C21 /* GambleGame */ = {
-			isa = PBXGroup;
-			children = (
-				3EC582C42BD2F14C004E2C21 /* GambleHomePage.swift */,
-				3EC582C62BD2F160004E2C21 /* GambleGamePage.swift */,
-				3EC582C82BD2F17B004E2C21 /* GambleEndPage.swift */,
-			);
-			path = GambleGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E8544AC2BC415AE00267C39 /* Udemy */ = {
+		3E2E74EF2BEE0EFF0004DC7B /* KisilerUygulamasi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E8544BB2BC415AF00267C39 /* Build configuration list for PBXNativeTarget "Udemy" */;
+			buildConfigurationList = 3E2E74FE2BEE0F000004DC7B /* Build configuration list for PBXNativeTarget "KisilerUygulamasi" */;
 			buildPhases = (
-				3E8544A92BC415AE00267C39 /* Sources */,
-				3E8544AA2BC415AE00267C39 /* Frameworks */,
-				3E8544AB2BC415AE00267C39 /* Resources */,
+				3E2E74EC2BEE0EFF0004DC7B /* Sources */,
+				3E2E74ED2BEE0EFF0004DC7B /* Frameworks */,
+				3E2E74EE2BEE0EFF0004DC7B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Udemy;
-			productName = Udemy;
-			productReference = 3E8544AD2BC415AE00267C39 /* Udemy.app */;
+			name = KisilerUygulamasi;
+			productName = KisilerUygulamasi;
+			productReference = 3E2E74F02BEE0EFF0004DC7B /* KisilerUygulamasi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3E8544A52BC415AE00267C39 /* Project object */ = {
+		3E2E74E82BEE0EFF0004DC7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					3E8544AC2BC415AE00267C39 = {
+					3E2E74EF2BEE0EFF0004DC7B = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 3E8544A82BC415AE00267C39 /* Build configuration list for PBXProject "Udemy" */;
+			buildConfigurationList = 3E2E74EB2BEE0EFF0004DC7B /* Build configuration list for PBXProject "KisilerUygulamasi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,49 +122,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 3E8544A42BC415AE00267C39;
-			productRefGroup = 3E8544AE2BC415AE00267C39 /* Products */;
+			mainGroup = 3E2E74E72BEE0EFF0004DC7B;
+			productRefGroup = 3E2E74F12BEE0EFF0004DC7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E8544AC2BC415AE00267C39 /* Udemy */,
+				3E2E74EF2BEE0EFF0004DC7B /* KisilerUygulamasi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E8544AB2BC415AE00267C39 /* Resources */ = {
+		3E2E74EE2BEE0EFF0004DC7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8544B82BC415AF00267C39 /* Preview Assets.xcassets in Resources */,
-				3E8544B52BC415AF00267C39 /* Assets.xcassets in Resources */,
+				3E2E74FB2BEE0F000004DC7B /* Preview Assets.xcassets in Resources */,
+				3E2E74F82BEE0F000004DC7B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E8544A92BC415AE00267C39 /* Sources */ = {
+		3E2E74EC2BEE0EFF0004DC7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8544C32BC4200700267C39 /* LogInPage.swift in Sources */,
-				3E8544B32BC415AE00267C39 /* ContentView.swift in Sources */,
-				3E8544C12BC4162800267C39 /* IlhamVerSayfa.swift in Sources */,
-				3E8544C72BC425A600267C39 /* YemekTarifSayfasi.swift in Sources */,
-				3E8544B12BC415AE00267C39 /* UdemyApp.swift in Sources */,
-				3E71F3642BD0679000D43CBF /* TabViewMain.swift in Sources */,
-				3EC582C92BD2F17B004E2C21 /* GambleEndPage.swift in Sources */,
-				3EC582C72BD2F160004E2C21 /* GambleGamePage.swift in Sources */,
-				3EC582C52BD2F14C004E2C21 /* GambleHomePage.swift in Sources */,
+				3E2E74F62BEE0EFF0004DC7B /* Anasayfa.swift in Sources */,
+				3E2E75042BEE13740004DC7B /* KisiDetay.swift in Sources */,
+				3E2E75062BEE13900004DC7B /* KisiItem.swift in Sources */,
+				3E2E74F42BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift in Sources */,
+				3E2E75022BEE13650004DC7B /* KisiEkle.swift in Sources */,
+				3E2E75082BEE13A50004DC7B /* Kisi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3E8544B92BC415AF00267C39 /* Debug */ = {
+		3E2E74FC2BEE0F000004DC7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		3E8544BA2BC415AF00267C39 /* Release */ = {
+		3E2E74FD2BEE0F000004DC7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,18 +280,17 @@
 			};
 			name = Release;
 		};
-		3E8544BC2BC415AF00267C39 /* Debug */ = {
+		3E2E74FF2BEE0F000004DC7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Udemy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KisilerUygulamasi/Preview Content\"";
 				DEVELOPMENT_TEAM = CW53ZG3J88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = UdemyCourse;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MelihDural.Udemy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MelihDural.KisilerUygulamasi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,18 +309,17 @@
 			};
 			name = Debug;
 		};
-		3E8544BD2BC415AF00267C39 /* Release */ = {
+		3E2E75002BEE0F000004DC7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Udemy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"KisilerUygulamasi/Preview Content\"";
 				DEVELOPMENT_TEAM = CW53ZG3J88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = UdemyCourse;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -385,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MelihDural.Udemy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MelihDural.KisilerUygulamasi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -396,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3E8544A82BC415AE00267C39 /* Build configuration list for PBXProject "Udemy" */ = {
+		3E2E74EB2BEE0EFF0004DC7B /* Build configuration list for PBXProject "KisilerUygulamasi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E8544B92BC415AF00267C39 /* Debug */,
-				3E8544BA2BC415AF00267C39 /* Release */,
+				3E2E74FC2BEE0F000004DC7B /* Debug */,
+				3E2E74FD2BEE0F000004DC7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E8544BB2BC415AF00267C39 /* Build configuration list for PBXNativeTarget "Udemy" */ = {
+		3E2E74FE2BEE0F000004DC7B /* Build configuration list for PBXNativeTarget "KisilerUygulamasi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E8544BC2BC415AF00267C39 /* Debug */,
-				3E8544BD2BC415AF00267C39 /* Release */,
+				3E2E74FF2BEE0F000004DC7B /* Debug */,
+				3E2E75002BEE0F000004DC7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3E8544A52BC415AE00267C39 /* Project object */;
+	rootObject = 3E2E74E82BEE0EFF0004DC7B /* Project object */;
 }
