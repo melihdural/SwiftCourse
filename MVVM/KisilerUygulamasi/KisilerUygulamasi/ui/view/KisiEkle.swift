@@ -11,14 +11,7 @@ struct KisiEkle: View {
     @State private var insert_ad = "";
     @State private var insert_tel = "";
     
-    var kisiler = [Kisi]();
-    
-    func kaydet(new_ad: String, new_tel: String){
-        let new_kisi = Kisi(
-            id: (kisiler.count - 1),
-            kisi_ad: new_ad,
-            kisi_tel: new_tel)
-    }
+    var viewModel = KisiEkleViewModel();
     
     var body: some View {
         VStack(spacing: 100) {
@@ -29,7 +22,7 @@ struct KisiEkle: View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
             Button("KAYDET"){
-                kaydet(new_ad: insert_ad, new_tel: insert_tel);
+                viewModel.kaydet(new_ad: insert_ad, new_tel: insert_tel);
             }
         }.navigationTitle("Kişi Kaydet")
     }

@@ -8,30 +8,17 @@
 import SwiftUI
 
 struct Anasayfa: View {
-    @State private var kisiler = [Kisi]();
+    @ObservedObject var viewModel = AnasayfaViewModel();
     @State private var aramaText = "";
-    
-    let defaultKisiler = [
-        Kisi(id: 1, kisi_ad: "Ali", kisi_tel: "1111"),
-        Kisi(id: 2, kisi_ad: "Veli", kisi_tel: "2222"),
-        Kisi(id: 3, kisi_ad: "Ahmet", kisi_tel: "3333")
-    ]
-    
-    func sil(at offset: IndexSet) {
-        if kisiler.count > 0 {
-            let kisi = kisiler[offset.first!];
-            kisiler.remove(at: offset.first!)
-        }
-    }
     
     var body: some View {
         NavigationStack{
             List{
-                ForEach(kisiler){ kisi in
+                ForEach(viewModel.kisiler){ kisi in
                     NavigationLink(destination: KisiDetay(kisi: kisi)){
                         KisiItem(kisi: kisi)
                     }
-                }.onDelete(perform: sil)
+                }.onDelete(perform: viewModel.delete)
             }.navigationTitle("Kişiler")
                 .toolbar{
                     ToolbarItem(placement: .navigationBarTrailing){
@@ -40,19 +27,12 @@ struct Anasayfa: View {
                         }
                     }
                 }.onAppear{
-                    kisiler = defaultKisiler;
+                    viewModel.fetchKisiler();
                 }
         }
         .searchable(text: $aramaText, prompt: "Ara")
         .onChange(of: aramaText) { s in
-            if s.isEmpty{
-                kisiler = defaultKisiler;
-            }else {
-                kisiler = defaultKisiler.filter { kisi in
-                    kisi.kisi_ad!.lowercased()
-                        .contains(s.lowercased())
-                }
-            }
+            viewModel.search(searchText: s)
         }
     }
 }

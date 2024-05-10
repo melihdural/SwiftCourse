@@ -11,6 +11,8 @@ struct KisiDetay: View {
     @State private var updated_ad = "";
     @State private var updated_tel = "";
     
+    var viewModel = KisiDetayViewModel();
+    
     var kisi = Kisi();
     
     var body: some View {
@@ -21,8 +23,8 @@ struct KisiDetay: View {
             TextField("Kişi Tel", text: $updated_tel)
                 .textFieldStyle(.roundedBorder)
                 .padding()
-            Button("GÜCELLE"){
-            
+            Button("GÜNCELLE"){
+                viewModel.guncelle(new_ad: updated_ad, new_tel: updated_tel)
             }
             .onAppear(){
                 updated_ad = kisi.kisi_ad!;
