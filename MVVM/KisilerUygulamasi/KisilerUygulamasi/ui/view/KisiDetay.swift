@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct KisiDetay: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var updated_ad = "";
     @State private var updated_tel = "";
     
@@ -24,7 +25,9 @@ struct KisiDetay: View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
             Button("GÜNCELLE"){
-                viewModel.guncelle(new_ad: updated_ad, new_tel: updated_tel)
+                viewModel.guncelle(id: kisi.id!, new_ad: updated_ad, new_tel: updated_tel) {
+                    self.presentationMode.wrappedValue.dismiss();
+                }
             }
             .onAppear(){
                 updated_ad = kisi.kisi_ad!;

@@ -8,7 +8,21 @@
 import Foundation
 
 class KisiEkleViewModel{
-    func kaydet(new_ad: String, new_tel: String){
-        print("Kişi Ekle: \(new_ad) - \(new_tel)")
+    var crud = CRUD();
+    var mainPage = AnasayfaViewModel();
+    
+    func kaydet(new_ad: String, new_tel: String, completion: @escaping () -> Void){
+        let newContact: Kisi =
+        Kisi(kisi_ad: new_ad, kisi_tel: new_tel)
+        
+        crud.addContact(contact: newContact) {
+            success, message in
+            if success {
+                print("Kayıt işlemi başarılı: \(message)")
+                DispatchQueue.main.async {
+                    completion();
+                }
+            }
+        }
     }
 }

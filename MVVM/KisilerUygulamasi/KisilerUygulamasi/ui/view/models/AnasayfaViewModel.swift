@@ -9,22 +9,29 @@ import Foundation
 
 class AnasayfaViewModel : ObservableObject{
     @Published var kisiler = [Kisi]();
-    
-    let defaultKisiler = [
-        Kisi(id: 1, kisi_ad: "Ali", kisi_tel: "1111"),
-        Kisi(id: 2, kisi_ad: "Veli", kisi_tel: "2222"),
-        Kisi(id: 3, kisi_ad: "Ahmet", kisi_tel: "3333")
-    ]
+    @Published var kisilerMaster = [Kisi]();
+    var crud = CRUD();
     
     func fetchKisiler(){
-        kisiler = defaultKisiler;
+        crud.getContacts() {success,contacts,message in
+            if success {
+                print("Fetch işlemi başarılı: \(message)")
+                DispatchQueue.main.async {
+                    self.kisiler = contacts ?? [];
+                    self.kisilerMaster = contacts ?? [];
+                }
+            } else {
+                print("Fetch işlemi başarısız: \(message)")
+            }
+            
+        }
     }
     
     func search(searchText: String){
         if searchText.isEmpty{
-            kisiler = defaultKisiler;
+            kisiler = kisilerMaster;
         }else {
-            kisiler = defaultKisiler.filter { kisi in
+            kisiler = kisiler.filter { kisi in
                 kisi.kisi_ad!.lowercased()
                     .contains(searchText.lowercased())
             }
@@ -32,9 +39,18 @@ class AnasayfaViewModel : ObservableObject{
     }
     
     func delete(at offset: IndexSet) {
-        if kisiler.count > 0 {
-            let kisi = kisiler[offset.first!];
-            kisiler.remove(at: offset.first!)
+        offset.forEach { index in
+            let contactId = self.kisiler[index].id;
+            crud.deleteContact(contactId: contactId!) { success, message in
+                if success {
+                    print("Silme işlemi başarılı: \(message)")
+                    DispatchQueue.main.async {
+                        self.kisiler.remove(at: index)
+                    }
+                } else {
+                    print("Silme işlemi başarısız: \(message)")
+                }
+            }
         }
     }
 }

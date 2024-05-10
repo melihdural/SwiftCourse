@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct KisiEkle: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var insert_ad = "";
     @State private var insert_tel = "";
     
@@ -22,7 +23,9 @@ struct KisiEkle: View {
                 .textFieldStyle(.roundedBorder)
                 .padding()
             Button("KAYDET"){
-                viewModel.kaydet(new_ad: insert_ad, new_tel: insert_tel);
+                viewModel.kaydet(new_ad: insert_ad, new_tel: insert_tel) {
+                    self.presentationMode.wrappedValue.dismiss();
+                }
             }
         }.navigationTitle("Kişi Kaydet")
     }

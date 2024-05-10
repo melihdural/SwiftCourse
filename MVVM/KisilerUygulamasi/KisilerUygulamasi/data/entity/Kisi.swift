@@ -7,13 +7,18 @@
 
 import Foundation
 
-class Kisi : Identifiable{
-    var id:Int?
-    var kisi_ad:String?
-    var kisi_tel:String?
+class Kisi: Identifiable, Codable {
+    var id: Int?
+    var kisi_ad: String?
+    var kisi_tel: String?
     
     init(){
         
+    }
+    
+    init(kisi_ad: String?, kisi_tel: String?) {
+        self.kisi_ad = kisi_ad
+        self.kisi_tel = kisi_tel
     }
     
     init(id: Int?, kisi_ad: String?, kisi_tel: String?) {

@@ -10,6 +10,7 @@
 		3E2C080A2BEE38B1007AC0BD /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C08092BEE38B1007AC0BD /* AnasayfaViewModel.swift */; };
 		3E2C080D2BEE38C9007AC0BD /* KisiEkleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C080C2BEE38C9007AC0BD /* KisiEkleViewModel.swift */; };
 		3E2C080F2BEE38D9007AC0BD /* KisiDetayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C080E2BEE38D9007AC0BD /* KisiDetayViewModel.swift */; };
+		3E2C08132BEE6F59007AC0BD /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C08122BEE6F59007AC0BD /* CRUD.swift */; };
 		3E2E74F42BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */; };
 		3E2E74F62BEE0EFF0004DC7B /* Anasayfa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E74F52BEE0EFF0004DC7B /* Anasayfa.swift */; };
 		3E2E74F82BEE0F000004DC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E74F72BEE0F000004DC7B /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 		3E2C08092BEE38B1007AC0BD /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
 		3E2C080C2BEE38C9007AC0BD /* KisiEkleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiEkleViewModel.swift; sourceTree = "<group>"; };
 		3E2C080E2BEE38D9007AC0BD /* KisiDetayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetayViewModel.swift; sourceTree = "<group>"; };
+		3E2C08102BEE5E30007AC0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E2C08122BEE6F59007AC0BD /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 		3E2E74F02BEE0EFF0004DC7B /* KisilerUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KisilerUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerUygulamasiApp.swift; sourceTree = "<group>"; };
 		3E2E74F52BEE0EFF0004DC7B /* Anasayfa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anasayfa.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		3E2C08042BEE35CE007AC0BD /* data */ = {
 			isa = PBXGroup;
 			children = (
+				3E2C08112BEE6F4C007AC0BD /* crud */,
 				3E2C08052BEE35D4007AC0BD /* entity */,
 			);
 			path = data;
@@ -100,6 +104,14 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		3E2C08112BEE6F4C007AC0BD /* crud */ = {
+			isa = PBXGroup;
+			children = (
+				3E2C08122BEE6F59007AC0BD /* CRUD.swift */,
+			);
+			path = crud;
+			sourceTree = "<group>";
+		};
 		3E2E74E72BEE0EFF0004DC7B = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		3E2E74F22BEE0EFF0004DC7B /* KisilerUygulamasi */ = {
 			isa = PBXGroup;
 			children = (
+				3E2C08102BEE5E30007AC0BD /* Info.plist */,
 				3E2C08042BEE35CE007AC0BD /* data */,
 				3E2C08032BEE35C7007AC0BD /* ui */,
 				3E2E74F32BEE0EFF0004DC7B /* KisilerUygulamasiApp.swift */,
@@ -215,6 +228,7 @@
 				3E2E75082BEE13A50004DC7B /* Kisi.swift in Sources */,
 				3E2C080D2BEE38C9007AC0BD /* KisiEkleViewModel.swift in Sources */,
 				3E2C080F2BEE38D9007AC0BD /* KisiDetayViewModel.swift in Sources */,
+				3E2C08132BEE6F59007AC0BD /* CRUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +365,7 @@
 				DEVELOPMENT_TEAM = CW53ZG3J88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KisilerUygulamasi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +395,7 @@
 				DEVELOPMENT_TEAM = CW53ZG3J88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KisilerUygulamasi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
