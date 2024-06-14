@@ -8,23 +8,34 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @State private var isShowingFilter = false
     var body: some View {
         NavigationStack{
-            SearchFilterBarView()
-            ScrollView{
-                LazyVStack(spacing: 32){
-                    ForEach(0 ... 10, id: \.self){ listing in
-                        NavigationLink(value: listing){
-                            ListItemView()
-                                .frame(height: 400)
-                                .clipShape(RoundedRectangle(cornerRadius: 10))
+            if isShowingFilter{
+                DestinationSearchView(show: $isShowingFilter)
+            }
+            else{
+                SearchFilterBarView()
+                    .onTapGesture {
+                        withAnimation(.snappy){
+                            isShowingFilter.toggle()
                         }
                     }
-                    .padding()
-                }
-                .navigationDestination(for: Int.self){ listing in
-                    ListingDetailView()
-                        .navigationBarBackButtonHidden()
+                ScrollView{
+                    LazyVStack(spacing: 32){
+                        ForEach(0 ... 10, id: \.self){ listing in
+                            NavigationLink(value: listing){
+                                ListItemView()
+                                    .frame(height: 400)
+                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                            }
+                        }
+                        .padding()
+                    }
+                    .navigationDestination(for: Int.self){ listing in
+                        ListingDetailView()
+                            .navigationBarBackButtonHidden()
+                    }
                 }
             }
         }
