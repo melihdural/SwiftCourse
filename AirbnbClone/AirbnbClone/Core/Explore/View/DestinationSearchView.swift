@@ -16,8 +16,9 @@ enum DestinationSearchOptions{
 
 struct DestinationSearchView: View {
     @Binding var show: Bool
+    @ObservedObject var viewModel: ExploreViewModel
     @State private var search = ""
-    @State private var selectedOption: DestinationSearchOptions = .guest
+    @State private var selectedOption: DestinationSearchOptions = .location
     @State private var startDate = Date()
     @State private var endDate = Date()
     @State private var numGuests = 0
@@ -39,8 +40,9 @@ struct DestinationSearchView: View {
                 
                 if !search.isEmpty{
                     Button("Clear"){
-                        
                         search = ""
+                        viewModel.searchText = search
+                        viewModel.searchListings(query: search)
                     }
                     .foregroundStyle(.black)
                     .font(.subheadline)
@@ -62,6 +64,14 @@ struct DestinationSearchView: View {
                             
                             TextField("Search destinations", text: $search)
                                 .font(.subheadline)
+                                .onSubmit {
+                                    viewModel.searchListings(query: search)
+                                    viewModel.searchText = search
+                                    show.toggle()
+                                }
+                                .onAppear(){
+                                    search = viewModel.searchText
+                                }
                         }
                         .frame(height: 44)
                         .padding(.horizontal)
@@ -143,7 +153,7 @@ struct DestinationSearchView: View {
 }
 
 #Preview {
-    DestinationSearchView(show: .constant(false))
+    DestinationSearchView(show: .constant(false), viewModel: ExploreViewModel(service: ExploreService()))
 }
 
 struct CollapseableDestinationViewModifier: ViewModifier {

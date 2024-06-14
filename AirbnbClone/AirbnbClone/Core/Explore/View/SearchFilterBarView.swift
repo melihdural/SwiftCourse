@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct SearchFilterBarView: View {
+    @ObservedObject var viewModel: ExploreViewModel
+    
     var body: some View {
         HStack{
             Image(systemName: "magnifyingglass")
             
             VStack(alignment: .leading, spacing: 2){
-                Text("Where to?")
+                Text(!viewModel.searchText.isEmpty ? viewModel.searchText : "Where to?")
                     .font(.footnote)
                     .fontWeight(.semibold)
                 
@@ -42,5 +44,5 @@ struct SearchFilterBarView: View {
 }
 
 #Preview {
-    SearchFilterBarView()
+    SearchFilterBarView(viewModel: ExploreViewModel(service: ExploreService()))
 }
