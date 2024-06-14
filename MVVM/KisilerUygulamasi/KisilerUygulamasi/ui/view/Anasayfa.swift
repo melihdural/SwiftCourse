@@ -11,6 +11,7 @@ struct Anasayfa: View {
     @ObservedObject var viewModel = AnasayfaViewModel();
     @State private var aramaText = "";
     
+    
     var body: some View {
         NavigationStack{
             List{

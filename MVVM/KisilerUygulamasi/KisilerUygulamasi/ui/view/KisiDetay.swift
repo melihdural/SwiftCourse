@@ -15,7 +15,7 @@ struct KisiDetay: View {
     var viewModel = KisiDetayViewModel();
     
     var kisi = Kisi();
-    
+
     var body: some View {
         VStack(spacing: 100) {
             TextField("Kişi Ad", text: $updated_ad)
@@ -35,6 +35,7 @@ struct KisiDetay: View {
             }
         }.navigationTitle("Kişiyi Güncelle")
     }
+
 }
 
 #Preview {

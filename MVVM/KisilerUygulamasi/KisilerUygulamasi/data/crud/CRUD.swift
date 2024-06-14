@@ -35,7 +35,7 @@ class CRUD {
                 return
             }
             
-            completion(true, "Contact deleted successfully")
+            completion(true, "Contact added successfully")
         }
         
         task.resume()
@@ -43,11 +43,13 @@ class CRUD {
     
     func getContacts(completion: @escaping (Bool, [Kisi]?, String) -> Void) {
         let url = URL(string: "\(baseUrl)/ListContact")!
+        
         var request = URLRequest(url: url);
         request.httpMethod = "GET";
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            
             if let error = error {
                 DispatchQueue.main.async {
                     completion(false, nil, "Error: \(error)")
@@ -81,7 +83,6 @@ class CRUD {
             }
         }
         task.resume()
-        
     }
     
     func updateContact(contact: Kisi, completion: @escaping (Bool, String) -> Void) {
